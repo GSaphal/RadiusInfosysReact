@@ -1,19 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 a {
   color: black !important;
   text-decoration: none;
 }
 .nav-item {
-  font-size: 15px;
+  font-size: 16px;
   color: black;
   font-weight: 500;
   margin-left: 20px;
+  text-transform: uppercase;
 }
-.nav-item:hover {
-  background: #0044d6;
-  color: white !important;
+
+.navbar__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #181818;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar__link:hover {
+  text-decoration: none;
+}
+
+.navbar__link--active {
+  border-bottom: 4px solid red;
+  transition: border-bottom 0.5s ease-in-out;
+}
+.main-body {
+  background-image: url("cover.jpg");
+  height: 50vh;
 }
